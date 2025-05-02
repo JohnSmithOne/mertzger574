@@ -214,7 +214,8 @@ nav .metzgerLogo{
 }
 
 .profile img{
-   width:22rem;
+   width:24vw;
+   min-width: 18rem;
    height:auto;
    border-radius: 50%;
    border:5px solid #5e4929;
@@ -413,8 +414,10 @@ nav .metzgerLogo{
 }
 
 .photoGallery .upButton, .photoGallery .downButton{
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 5vw;
+    min-width: 3.25rem;
+    height: 5vw;
+    min-height: 3.25rem;
     /* background-color: white; */
     border-radius: 50%;
     border:none;
@@ -675,7 +678,7 @@ nav .metzgerLogo{
 /* SEARCH LISTINGS */
 
 .searchListings{
-    padding: 3rem;
+    padding: 3rem 0 3rem 0;
     background-color: #3e160c;
     gap:1rem;
 }
@@ -718,6 +721,7 @@ nav .metzgerLogo{
 .formSearchListings .border .cinzelText{
     grid-column: 1 / -1;
     font-size:1.5rem;
+    padding:0 0 0 1rem;
     margin-bottom: 0.5rem;
 }    
 .formSearchListings .border .cinzelText span{
@@ -1019,6 +1023,16 @@ nav .metzgerLogo{
     border-bottom: 2px solid #969696 ;
 }
 
+
+@media (max-width: 768px) {
+    .contactForm, .mapEmbed{
+        width: 85%;
+    }
+    
+    .formSearchListings{
+        width: 90%;
+    }
+}
 
 /* SCROLL ANIMATIONS */
 .animatedBlock{
