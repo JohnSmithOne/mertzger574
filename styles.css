@@ -63,7 +63,6 @@
     padding: 0;
 }
 
-
 .cinzelText{
     font-family: 'Cinzel', serif;
     font-weight: 100;
@@ -900,11 +899,11 @@ nav .metzgerLogo{
 
 .inputFloatLabel textarea{
     width: 100%;
-    max-width: 100%;
+    max-width: 19rem;
     min-width: 30%;
     max-height: 20rem;
     min-height: 6rem;
-  }
+}
   
 .inputFloatLabel label{
     pointer-events: none;
@@ -1025,7 +1024,7 @@ nav .metzgerLogo{
 
 
 @media (max-width: 768px) {
-    .contactForm, .mapEmbed{
+    .contactForm, .mapEmbed, .block{
         width: 85%;
     }
     
