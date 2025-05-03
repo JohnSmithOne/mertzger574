@@ -44,3 +44,20 @@ hiddenElements.forEach((el, index) => {
     el.style.setProperty('--delay', `${index * 0.2}s`);
     observer.observe(el);
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleRow = document.querySelector(".dropdown-toggle");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    toggleRow.addEventListener("click", () => {
+      dropdownMenu.style.display = "block";
+      toggleRow.style.display = "none";
+    });
+
+    dropdownMenu.addEventListener("click", () => {
+        dropdownMenu.style.display = "none";
+        toggleRow.style.display = "inline-table";
+      });
+  });
+

@@ -963,6 +963,21 @@ nav .metzgerLogo{
   .captchaProtection a:hover{
     text-decoration: underline;
   }
+
+  .dropdown-toggle {
+    position: relative; 
+  }
+  .dropdown-toggle .openDropdown{
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-toggle .openDropdown:hover{
+    color:#af7415;
+  }
+  .dropdown-menu {
+    display:none;
+  }
+  
 .footer{
     display: flex;
     position: relative;
@@ -1054,3 +1069,4 @@ nav .metzgerLogo{
     transition: all 0.3s ease-out;
     transition-delay: var(--delay, 0s); /* Use a custom variable */
 }
+
